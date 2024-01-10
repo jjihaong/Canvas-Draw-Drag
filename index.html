@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite</title>
+    <style>
+      .box {
+        text-align: center;
+        margin: 0 auto;
+      }
+      #canvas {
+        border: 1px solid #eee;
+        background-color: #aaa;
+      }
+
+      .input {
+        margin: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>Canvas Draw Drag</h3>
+
+      <div class="input">
+        <label for="">选择颜色：</label>
+        <input type="color" />
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <!-- 给script标签添加属性type是可以运行es6代码的 -->
+    <!-- <script src="./src/main.js" type="module"></script> -->
+    <!-- 不加type属性，无法运行es6代码 -->
+    <!-- <script src="./src/main.js"></script> -->
+    <script src="./src/js/canvas.js" type="module"></script>
+  </body>
+</html>
